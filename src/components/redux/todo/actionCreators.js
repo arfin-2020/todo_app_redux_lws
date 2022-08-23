@@ -3,20 +3,20 @@ import { ADDED, ALLCOMPLETED, CLEARCOMPLETED, COLORSELECTED, DELETED, TOGGLED } 
 export const added = (todoText) =>{
     return{
         type: ADDED,
-        plaload: todoText,
+        todoText,
     };
 };
 export const toggled = (todoId) =>{
     return{
         type: TOGGLED,
-        plaload: todoId,
+         todoId,
     };
 };
-export const colorSelected = (todoId,color) =>{
+export const colorSelected = (colorId,color) =>{
     return{
         type: COLORSELECTED,
         plaload: {
-            todoId,
+            colorId,
             color,
         },
     };
@@ -30,7 +30,7 @@ export const allCompleted = () =>{
 export const deleted = (todoId) =>{
     return{
         type: DELETED,
-        plaload: todoId,
+        todoId,
     };
 };
 export const clearCompleted = () =>{
