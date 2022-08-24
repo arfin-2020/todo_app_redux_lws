@@ -3,12 +3,12 @@ import { filterInitialState } from "./defaultState";
 
 const filterReducer = (state = filterInitialState, action) => {
   switch (action.type) {
-    case STATUSCHANGED: {
+    case STATUSCHANGED: 
       return {
         ...state,
         status: action.payload,
       };
-    }
+    
 
     case COLORCHANGED:
       const { changeType, color } = action.payload;
