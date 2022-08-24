@@ -11,5 +11,11 @@ export const initialValue = [
     completed: false,
     color: "red",
   },
+  {
+    id: 3,
+    text: "Learn Redux11111",
+    completed: false,
+    color: "red",
+  },
   
 ];
