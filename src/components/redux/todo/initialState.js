@@ -3,6 +3,7 @@ export const initialValue = [
     id: 1,
     text: "Learn React JS",
     completed: true,
+    color: 'yellow',
   },
   {
     id: 2,
@@ -10,4 +11,5 @@ export const initialValue = [
     completed: false,
     color: "red",
   },
+  
 ];

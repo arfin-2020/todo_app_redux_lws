@@ -42,13 +42,14 @@ const todoReducer = (state = initialValue, action) => {
             if(todo.id !== action.todoId){
                 return todo;
             };
+            // return todo;  // Bejal Ase
         });
 
         case ALLCOMPLETED:
          return state.map((todo)=>{
             return{
                 ...todo,
-                completed:true,
+                completed:true, 
             };
          })
 
@@ -57,6 +58,7 @@ const todoReducer = (state = initialValue, action) => {
                 if(todo.completed !== true){
                   return todo
                 }
+                // return todo; // Bejal Ase
             })   
 
     default:

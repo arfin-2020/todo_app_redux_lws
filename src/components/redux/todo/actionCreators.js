@@ -15,7 +15,7 @@ export const toggled = (todoId) =>{
 export const colorSelected = (colorId,color) =>{
     return{
         type: COLORSELECTED,
-        plaload: {
+        payload: {
             colorId,
             color,
         },
