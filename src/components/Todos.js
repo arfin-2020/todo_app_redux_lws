@@ -19,7 +19,7 @@ const Todos = ({ todo }) => {
     }
     const deleteHandler = (todoId)=>{
         const result = dispatch(deleted(todoId));
-        console.log("Deleted--------", result);
+        // console.log("Deleted--------", result);
     }
     return (
         <div className="flex justify-start items-center p-2 hover:bg-gray-100 hover:transition-all space-x-4 border-b border-gray-400/20 last:border-0">

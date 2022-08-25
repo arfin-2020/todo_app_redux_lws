@@ -4,6 +4,7 @@ import { colorChanged, statusChanged } from "./redux/filters/actionCreators";
 
 const Footer = () => {
   const todos = useSelector((state) => state.todos);
+
   const filter = useSelector((state) => state.filters)
   const dispatch = useDispatch();
   const todoRemaining = todos.filter((todo) => !todo.completed).length;

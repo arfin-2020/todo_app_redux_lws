@@ -2,8 +2,8 @@ import { ADDED, ALLCOMPLETED, CLEARCOMPLETED, COLORSELECTED, DELETED, TOGGLED } 
 import { initialValue } from "./initialState";
 
 const nextTodoId = (todos) => {
-  const maxId = todos.reducer((maxId, todo) => Math.max(todo.id, maxId), -1);
-  console.log("maxID----------", maxId + 1);
+  const maxId = todos.reduce((maxId, todo) => Math.max(todo.id, maxId), -1);
+  // console.log("maxID----------", maxId + 1);
   return maxId + 1;
 };
 const todoReducer = (state = initialValue, action) => {
@@ -14,6 +14,7 @@ const todoReducer = (state = initialValue, action) => {
         {
           id: nextTodoId(state),
           text: action.todoText,
+          completed: false,
         },
       ];
     case TOGGLED:

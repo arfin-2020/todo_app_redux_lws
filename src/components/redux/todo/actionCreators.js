@@ -1,6 +1,7 @@
 import { ADDED, ALLCOMPLETED, CLEARCOMPLETED, COLORSELECTED, DELETED, TOGGLED } from "./actionTypes"
 
 export const added = (todoText) =>{
+    // console.log(todoText);
     return{
         type: ADDED,
         todoText,
