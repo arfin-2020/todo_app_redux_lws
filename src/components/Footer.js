@@ -19,7 +19,7 @@ const Footer = () => {
   }
 
   const handleStatusChange = (status) => {
-    dispatch(statusChanged(status))
+   dispatch(statusChanged(status))
     // console.log(result)
   }
 
@@ -44,7 +44,7 @@ const Footer = () => {
         <li className={`cursor-pointer ${status === 'Completed' && "font-bold"}`} onClick={() => handleStatusChange('Completed')}>Complete</li>
         <li></li>
         <li></li>
-        <li className={`h-3 w-3 border-2 border-geen-500 md:hover:bg-green-500 rounded-full cursor-pointer ${colors.includes('green') && 'bg-green-500'}`} onClick={()=>handleColorChange('green')}></li>
+        <li className={`h-3 w-3 border-2 border-green-500 md:hover:bg-green-500 rounded-full cursor-pointer ${colors.includes('green') && 'bg-green-500'}`} onClick={()=>handleColorChange('green')}></li>
         <li className={`h-3 w-3 border-2 border-red-500 md:hover:bg-red-500 rounded-full cursor-pointer ${colors.includes('red') && 'bg-red-500'}`} onClick={()=>handleColorChange('red')}></li>
         <li className={`h-3 w-3 border-2 border-yellow-500 md:hover:bg-yellow-500 rounded-full cursor-pointer ${colors.includes('yellow') && 'bg-yellow-500'}`} onClick={()=>handleColorChange('yellow')}></li>
       </ul>
